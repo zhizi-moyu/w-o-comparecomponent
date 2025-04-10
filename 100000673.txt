@@ -1,0 +1,17 @@
+
+
+            component_list = {
+    'locking_key': {
+        'num': '1',
+        'description': 'A flat, irregularly shaped mechanical key with a polygonal body. One end is tapered to a point, while the opposite end has a rounded protrusion. The body is thin and flat, with a consistent thickness throughout. The top and bottom surfaces are flat, and the edges are sharply defined. The component appears to be used for interlocking or positioning within a slot or groove in a mechanical assembly.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['locking_key'],
+        'description': 'This component is located in this layer alone. It is a flat, irregularly shaped mechanical key with a polygonal body, consistent thickness, and is likely used for interlocking or positioning within a slot or groove.'
+    }
+}
+        
