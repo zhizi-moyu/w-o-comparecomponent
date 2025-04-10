@@ -1,0 +1,17 @@
+
+
+            component_list = {
+    'angled_block': {
+        'num': '1',
+        'description': 'A single solid block with a rectangular base and an inclined top surface. The front portion of the block extends outward and downward at an angle, forming a wedge-like shape. The rear portion is a rectangular prism, while the front tapers into a thinner edge. The top surface is slanted, and the bottom remains flat. The overall geometry resembles a ramp or a chisel tip, with sharp edges and clean planar faces.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['angled_block'],
+        'description': 'This single component occupies the entire structure. It has a flat base and an inclined top surface, forming a wedge-like shape.'
+    }
+}
+        
