@@ -1,0 +1,41 @@
+
+
+            component_list = {
+    'tabletop': {
+        'num': '1',
+        'description': 'A flat rectangular panel with smooth edges, serving as the top surface of the table. It has a clean, planar surface and appears to be the largest component in the model.'
+    },
+    'table_leg': {
+        'num': '4',
+        'description': 'Slender cylindrical rods of equal length, each attached vertically to a corner of the tabletop. They serve as the vertical supports of the table.'
+    },
+    'side_support_bar': {
+        'num': '2',
+        'description': 'Long, narrow cylindrical rods that connect the legs on the longer sides of the table. Positioned horizontally near the bottom of the legs to provide lateral stability.'
+    },
+    'central_support_bar': {
+        'num': '2',
+        'description': 'Flat rectangular bars mounted underneath the tabletop, running parallel to the shorter side. They provide structural reinforcement to the tabletop.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['tabletop'],
+        'description': 'The tabletop is the uppermost component, forming the flat surface of the table.'
+    },
+    'layer_2': {
+        'involved_components': ['central_support_bar'],
+        'description': 'Two central support bars are mounted directly underneath the tabletop, running parallel to the shorter side to reinforce the tabletop structure.'
+    },
+    'layer_3': {
+        'involved_components': ['table_leg'],
+        'description': 'Four table legs are vertically attached to the corners of the tabletop, extending downward to support the table.'
+    },
+    'layer_4': {
+        'involved_components': ['side_support_bar'],
+        'description': 'Two side support bars are horizontally positioned near the bottom ends of the table legs, connecting the legs on the longer sides to provide lateral stability.'
+    }
+}
+        
