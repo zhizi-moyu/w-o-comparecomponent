@@ -1,0 +1,25 @@
+
+
+            component_list = {
+    'fork_end_connector': {
+        'num': '1',
+        'description': 'A U-shaped component with two parallel arms extending from a cylindrical base. Each arm has a circular hole aligned for a pin connection. The base is a short cylinder that likely serves as a mounting or rotational axis.'
+    },
+    'pin_end_connector': {
+        'num': '1',
+        'description': 'A T-shaped component with a single central tab extending from a cylindrical shaft. The tab has a circular hole that aligns with the holes in the fork-end connector. The shaft is cylindrical and appears to be designed for insertion or rotation.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['fork_end_connector'],
+        'description': 'The fork_end_connector is positioned at the top, with its U-shaped arms enclosing the tab of the pin_end_connector.'
+    },
+    'layer_2': {
+        'involved_components': ['pin_end_connector'],
+        'description': 'The pin_end_connector is inserted into the fork_end_connector from below, with its tab aligned between the arms of the fork_end_connector for a pin connection.'
+    }
+}
+        
