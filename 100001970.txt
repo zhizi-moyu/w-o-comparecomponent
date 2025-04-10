@@ -1,0 +1,25 @@
+
+
+            component_list = {
+    'outer_cylindrical_body': {
+        'num': '1',
+        'description': 'A large, vertically oriented cylinder with a flat top and bottom surface. The side surface is smooth and slightly reflective. The bottom face has a recessed circular cavity where the inner shaft is inserted.'
+    },
+    'inner_cylindrical_shaft': {
+        'num': '1',
+        'description': 'A smaller cylinder concentrically mounted into the bottom of the outer cylindrical body. It protrudes downward and fits into a recessed cavity. The shaft has a smooth surface and is slightly shorter in height compared to the outer body.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['outer_cylindrical_body'],
+        'description': 'The outer cylindrical body is the topmost component and forms the main structure. It has a recessed cavity at the bottom.'
+    },
+    'layer_2': {
+        'involved_components': ['inner_cylindrical_shaft'],
+        'description': 'The inner cylindrical shaft is concentrically mounted into the recessed cavity at the bottom of the outer cylindrical body and protrudes downward.'
+    }
+}
+        
