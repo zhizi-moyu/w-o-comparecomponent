@@ -1,4 +1,3 @@
-```scad
 // Parameters
 shaft_d = 20;
 shaft_l = 20;
@@ -78,5 +77,3 @@ translate([0, 0, shaft_l + 3*flange_t + spacer_t + central_shaft_l]) spacer_ring
 translate([0, 0, shaft_l + 3*flange_t + 2*spacer_t + central_shaft_l]) flange_with_bolts(); // flange_plate_4 + bolts/nuts
 
 translate([0, 0, shaft_l + 4*flange_t + 2*spacer_t + central_shaft_l]) shaft(); // output shaft
-```
-
