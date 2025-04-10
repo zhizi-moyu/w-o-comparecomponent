@@ -1,0 +1,45 @@
+
+
+            component_list = {
+    'left_hub': {
+        'num': '1',
+        'description': 'A solid cylindrical component with a central bore and three evenly spaced outward-facing jaws. The outer face has bolt holes for fastening. The jaws are thick and rectangular, extending axially to interlock with the elastomer spider.'
+    },
+    'right_hub': {
+        'num': '1',
+        'description': 'A mirrored cylindrical component similar to the left hub, with a central bore and three inward-facing jaws. It also has bolt holes aligned with the left hub for assembly. The jaws interlock with the elastomer spider from the opposite side.'
+    },
+    'elastomer_spider': {
+        'num': '1',
+        'description': 'A flexible star-shaped insert with six arms (three pairs), designed to fit snugly between the jaws of the left and right hubs. It acts as a torque-transmitting and vibration-damping element. The arms are slightly rounded and made of a softer material.'
+    },
+    'bolt': {
+        'num': '3',
+        'description': 'Slender cylindrical fasteners with a hexagonal head, used to secure the left and right hubs together through the bolt holes. They pass through the flanges of both hubs.'
+    },
+    'nut': {
+        'num': '3',
+        'description': 'Small hexagonal components that thread onto the bolts to clamp the hubs together. Positioned on the opposite side of the bolt heads.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_hub'],
+        'description': 'The left hub is positioned on the left side of the assembly. It has outward-facing jaws that interlock with the elastomer spider.'
+    },
+    'layer_2': {
+        'involved_components': ['elastomer_spider'],
+        'description': 'The elastomer spider is centrally located between the jaws of the left and right hubs, interlocking with both to transmit torque and dampen vibration.'
+    },
+    'layer_3': {
+        'involved_components': ['right_hub'],
+        'description': 'The right hub is positioned on the right side of the assembly. It has inward-facing jaws that interlock with the elastomer spider from the opposite side.'
+    },
+    'layer_4': {
+        'involved_components': ['bolt', 'nut'],
+        'description': 'Three bolts pass through the flanges of both hubs, and three nuts are threaded onto the bolts on the opposite side to clamp the hubs together.'
+    }
+}
+        
