@@ -1,0 +1,17 @@
+
+
+            component_list = {
+    'lever_latch_body': {
+        'num': '1',
+        'description': 'An integrated L-shaped mechanical component with a horizontal base and a vertical arm. The horizontal base is elongated and flat, with a cylindrical pivot pin protruding downward near one end, and a small cylindrical stop or peg extending upward from the top surface. The vertical arm rises perpendicularly from one end of the base, forming a right angle. The entire component appears to be a single molded or machined piece, likely used as a latch or mechanical actuator.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['lever_latch_body'],
+        'description': 'This component is located in this layer alone. It is an L-shaped mechanical part with a horizontal base and a vertical arm, featuring a downward cylindrical pivot pin and an upward cylindrical stop.'
+    }
+}
+        
