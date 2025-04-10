@@ -1,0 +1,33 @@
+
+
+            component_list = {
+    'left_clamp_hub': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore, a radial slit, and a recessed slot on the side for clamping. It has a flat face on one end and a jaw-like interlocking profile on the other end.'
+    },
+    'right_clamp_hub': {
+        'num': '1',
+        'description': 'Identical to the left clamp hub, this cylindrical component also features a central bore, a radial slit, and a recessed slot for clamping. It mates with the left hub via the interlocking jaw profile.'
+    },
+    'central_jaw_insert': {
+        'num': '1',
+        'description': 'A cylindrical insert with a toothed or jaw-like profile on both ends that fits into the interlocking profiles of the left and right clamp hubs. It serves as the flexible element in the coupling.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_clamp_hub'],
+        'description': 'This component is positioned at the top end of the assembly and interlocks with the central_jaw_insert via its jaw-like profile.'
+    },
+    'layer_2': {
+        'involved_components': ['central_jaw_insert'],
+        'description': 'This component is centrally located and interlocks with both the left and right clamp hubs, serving as the flexible coupling element.'
+    },
+    'layer_3': {
+        'involved_components': ['right_clamp_hub'],
+        'description': 'This component is positioned at the bottom end of the assembly and interlocks with the central_jaw_insert via its jaw-like profile.'
+    }
+}
+        
