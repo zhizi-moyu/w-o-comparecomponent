@@ -1,4 +1,3 @@
-```scad
 // Parameters
 shaft_d = 20;
 shaft_l = 30;
@@ -69,5 +68,3 @@ translate([flange_d/2 + 2, 0, shaft_l + spacing + flange_t*3 + spacer_t*2 + spac
 translate([-flange_d/2 - 2, 0, shaft_l + spacing + flange_t*3 + spacer_t*2 + spacing*5]) nut(); // nut_8
 
 translate([0, 0, shaft_l + spacing + flange_t*4 + spacer_t*2 + spacing*6]) shaft(); // output shaft
-```
-
