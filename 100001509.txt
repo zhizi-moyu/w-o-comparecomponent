@@ -1,0 +1,17 @@
+
+
+            component_list = {
+    'square_plate_with_hole': {
+        'num': '6',
+        'description': 'A flat square plate with slightly rounded corners and a small circular hole at the center. The plate has a uniform thickness and a smooth surface. The central hole is likely for mounting or alignment purposes. The edges are slightly beveled, and the plate appears to be made of a solid material, possibly metal or plastic.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['square_plate_with_hole'],
+        'description': 'This component is located in this layer alone. It is a flat square plate with a central hole, viewed from multiple angles.'
+    }
+}
+        
