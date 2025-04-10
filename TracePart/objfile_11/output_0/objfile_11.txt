@@ -1,0 +1,29 @@
+
+
+            component_list = {
+    'outer_cylindrical_body': {
+        'num': '1',
+        'description': 'A short, thick cylinder with a flat face on both ends. It has three shallow circumferential grooves around its outer surface, likely for grip or alignment. One end has a central hole for the shaft, and the other end has a slot cut across the diameter, possibly for clamping or flexibility.'
+    },
+    'central_shaft': {
+        'num': '1',
+        'description': 'A slender cylindrical shaft protruding from the center of the outer cylindrical body. It appears to be either a separate insert or an integral part of the body, used for transmitting torque or rotation.'
+    },
+    'set_screw': {
+        'num': '2',
+        'description': 'Two small cylindrical screws embedded radially into the outer cylindrical body. They are likely used to secure the shaft in place. The heads are recessed into the body and may be hexagonal or slotted for tightening.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['central_shaft'],
+        'description': 'The central shaft protrudes from the top of the outer cylindrical body, extending outward as the topmost component.'
+    },
+    'layer_2': {
+        'involved_components': ['outer_cylindrical_body', 'set_screw_1', 'set_screw_2'],
+        'description': 'The outer cylindrical body forms the main structure, with two set screws embedded radially into its side to secure the central shaft.'
+    }
+}
+        
