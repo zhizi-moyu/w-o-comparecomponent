@@ -1,0 +1,57 @@
+
+
+            component_list = {
+    'input_shaft': {
+        'num': '1',
+        'description': 'A cylindrical shaft with a flat circular flange at one end and a central hole. The shaft has two protruding rectangular tabs for torque transmission.'
+    },
+    'output_shaft': {
+        'num': '1',
+        'description': 'A cylindrical shaft similar to the input shaft, with a flat circular flange and two rectangular tabs. It mirrors the input shaft for coupling.'
+    },
+    'flange_ring': {
+        'num': '2',
+        'description': 'Flat circular rings with bolt holes evenly spaced around the perimeter. These rings are mounted on the flanges of the shafts to connect them.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'Thin, flat rings placed between the flange rings to provide spacing and flexibility. They are slightly recessed and have a smooth surface.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'Slender cylindrical bolts with a hexagonal head, used to fasten the flange rings together. Each bolt passes through the flange and spacer rings.'
+    },
+    'nut': {
+        'num': '8',
+        'description': 'Hexagonal nuts that thread onto the bolts to secure the flange and spacer rings. They are small and fit tightly against the flange surface.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft'],
+        'description': 'The input shaft is located at the topmost layer. It has a flange and two rectangular tabs for torque transmission.'
+    },
+    'layer_2': {
+        'involved_components': ['flange_ring_1', 'nut_1', 'nut_2', 'nut_3', 'nut_4'],
+        'description': 'The first flange ring is mounted on the flange of the input shaft. Four nuts are used to secure it in place.'
+    },
+    'layer_3': {
+        'involved_components': ['spacer_ring_1', 'bolt_1', 'bolt_2', 'bolt_3', 'bolt_4'],
+        'description': 'A spacer ring is placed between the flange rings. Four bolts pass through the flange and spacer ring to provide spacing and flexibility.'
+    },
+    'layer_4': {
+        'involved_components': ['spacer_ring_2', 'bolt_5', 'bolt_6', 'bolt_7', 'bolt_8'],
+        'description': 'Another spacer ring is placed below the first one, with the remaining bolts passing through to continue the connection.'
+    },
+    'layer_5': {
+        'involved_components': ['flange_ring_2', 'nut_5', 'nut_6', 'nut_7', 'nut_8'],
+        'description': 'The second flange ring is mounted below the spacer rings and secured with four nuts, completing the bolted connection.'
+    },
+    'layer_6': {
+        'involved_components': ['output_shaft'],
+        'description': 'The output shaft is located at the bottommost layer, mirroring the input shaft with a flange and rectangular tabs for torque transmission.'
+    }
+}
+        
