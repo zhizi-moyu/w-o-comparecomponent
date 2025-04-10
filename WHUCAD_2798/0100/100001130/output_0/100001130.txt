@@ -1,0 +1,37 @@
+
+
+            component_list = {
+    'L_bracket': {
+        'num': '6',
+        'description': 'An L-shaped bracket with two perpendicular flat arms forming a 90-degree angle. One arm is longer than the other, and the outer corner is rounded. The cross-section is rectangular, and the thickness is uniform. The surface is smooth and the edges are sharp except for the rounded outer corner. This component appears to be structural and is likely used to form a rigid frame or support structure when assembled with others.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['L_bracket_1'],
+        'description': 'This L-shaped bracket is positioned at the top of the vertical stack.'
+    },
+    'layer_2': {
+        'involved_components': ['L_bracket_2'],
+        'description': 'This L-shaped bracket is positioned directly below L_bracket_1 in the vertical stack.'
+    },
+    'layer_3': {
+        'involved_components': ['L_bracket_3'],
+        'description': 'This L-shaped bracket is positioned directly below L_bracket_2 in the vertical stack.'
+    },
+    'layer_4': {
+        'involved_components': ['L_bracket_4'],
+        'description': 'This L-shaped bracket is positioned directly below L_bracket_3 in the vertical stack.'
+    },
+    'layer_5': {
+        'involved_components': ['L_bracket_5'],
+        'description': 'This L-shaped bracket is positioned directly below L_bracket_4 in the vertical stack.'
+    },
+    'layer_6': {
+        'involved_components': ['L_bracket_6'],
+        'description': 'This L-shaped bracket is positioned at the bottom of the vertical stack.'
+    }
+}
+        
