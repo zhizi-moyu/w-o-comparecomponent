@@ -1,0 +1,41 @@
+
+
+            component_list = {
+    'left_hub': {
+        'num': '1',
+        'description': 'A cylindrical component with a central bore and three outward-facing curved jaws spaced 120 degrees apart. The outer face has a flat surface with bolt holes.'
+    },
+    'right_hub': {
+        'num': '1',
+        'description': 'A mirror image of the left hub, also cylindrical with a central bore and three inward-facing curved jaws. It mates with the left hub to enclose the spider.'
+    },
+    'jaw_insert': {
+        'num': '3',
+        'description': 'Identical curved segments with a semi-circular profile, designed to fit between the jaws of the left and right hubs. They form a ring when assembled and provide torque transmission.'
+    },
+    'elastomeric_spider': {
+        'num': '1',
+        'description': 'A flexible, star-shaped component with six arms that fit into the gaps between the jaw inserts. It provides damping and misalignment compensation between the hubs.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_hub'],
+        'description': 'The left hub is positioned at the topmost layer, with its jaws facing inward toward the center of the assembly.'
+    },
+    'layer_2': {
+        'involved_components': ['jaw_insert'],
+        'description': 'Three jaw inserts are evenly distributed between the jaws of the left and right hubs, forming a ring-like structure for torque transmission.'
+    },
+    'layer_3': {
+        'involved_components': ['elastomeric_spider'],
+        'description': 'The elastomeric spider is centrally located, with its six arms fitting into the gaps between the jaw inserts to provide damping and misalignment compensation.'
+    },
+    'layer_4': {
+        'involved_components': ['right_hub'],
+        'description': 'The right hub is positioned at the bottommost layer, mirroring the left hub with its jaws facing inward to enclose the jaw inserts and spider.'
+    }
+}
+        
