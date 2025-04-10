@@ -1,0 +1,29 @@
+
+
+            component_list = {
+    'left_coupling_half': {
+        'num': '1',
+        'description': 'A short cylindrical component with a central bore for shaft insertion, a slit cut along its length for flexibility, and two threaded holes for bolts. The outer surface is smooth, and the front face has a circular recess.'
+    },
+    'right_coupling_half': {
+        'num': '1',
+        'description': 'A matching cylindrical component to the left half, also with a central bore and a longitudinal slit. It features two through-holes aligned with the threaded holes of the left half, allowing bolts to pass through. The front face is flat and mates with the left half.'
+    },
+    'clamping_bolt': {
+        'num': '2',
+        'description': 'Hexagonal head bolts with a cylindrical threaded shaft, used to clamp the two coupling halves together. They pass through the holes in the right half and thread into the left half.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['left_coupling_half', 'right_coupling_half'],
+        'description': 'The left and right coupling halves are aligned face-to-face along the central axis. The front face of the left half mates with the flat face of the right half, forming a cylindrical coupling.'
+    },
+    'layer_2': {
+        'involved_components': ['clamping_bolt'],
+        'description': 'Two clamping bolts pass through the through-holes in the right coupling half and thread into the left coupling half, securing the two halves together.'
+    }
+}
+        
