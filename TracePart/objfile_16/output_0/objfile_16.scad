@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 shaft_d = 20;
 shaft_l = 30;
@@ -83,5 +83,5 @@ for (i = [0:90:270]) {
     // Nuts on flange_plate_4
     translate([x, y, shaft_l+flange_t*4+spacer_t*2]) nut();
 }
-```
+
 
