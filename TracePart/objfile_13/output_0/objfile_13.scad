@@ -1,4 +1,3 @@
-```scad
 $fn = 100;
 
 // Parameters
@@ -73,5 +72,3 @@ module coupling_assembly() {
 
 // Render the full assembly
 coupling_assembly();
-```
-
