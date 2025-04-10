@@ -1,0 +1,53 @@
+
+
+            component_list = {
+    'input_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft with a flat end and a central hole, designed to connect to the flange plate. It has a smooth surface and is located on the left side of the model.'
+    },
+    'output_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft similar to the input shaft, located on the right side of the model. It also has a central hole and connects to the opposite flange plate.'
+    },
+    'flexible_ring': {
+        'num': '4',
+        'description': 'Thin, flat, circular rings stacked between the two flange plates. These rings are slightly spaced apart and provide flexibility to the coupling. They are uniform in size and evenly distributed.'
+    },
+    'flange_plate': {
+        'num': '2',
+        'description': 'Thick, circular plates with bolt holes arranged in a triangular pattern. Each flange plate connects a shaft to the flexible ring assembly. They serve as the main structural interface between the shafts and the flexible section.'
+    },
+    'bolt': {
+        'num': '6',
+        'description': 'Slender cylindrical fasteners with hexagonal heads, inserted through the flange plates to secure the assembly. Three bolts are used per flange plate.'
+    },
+    'nut': {
+        'num': '6',
+        'description': 'Hexagonal nuts paired with the bolts, used to fasten the flange plates to the flexible ring assembly. Positioned opposite the bolt heads.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft'],
+        'description': 'The input shaft is located at the far left end of the model. It connects directly to the left flange plate.'
+    },
+    'layer_2': {
+        'involved_components': ['flange_plate_1', 'bolt_1', 'bolt_2', 'bolt_3', 'nut_1', 'nut_2', 'nut_3'],
+        'description': 'The first flange plate is attached to the input shaft. Three bolts pass through this flange plate and are secured with three nuts on the opposite side.'
+    },
+    'layer_3': {
+        'involved_components': ['flexible_ring_1', 'flexible_ring_2', 'flexible_ring_3', 'flexible_ring_4'],
+        'description': 'Four flexible rings are stacked in the middle section between the two flange plates. They are evenly spaced and provide flexibility to the coupling.'
+    },
+    'layer_4': {
+        'involved_components': ['flange_plate_2', 'bolt_4', 'bolt_5', 'bolt_6', 'nut_4', 'nut_5', 'nut_6'],
+        'description': 'The second flange plate is attached to the output shaft. Three bolts pass through this flange plate and are secured with three nuts on the opposite side, mirroring the first flange plate.'
+    },
+    'layer_5': {
+        'involved_components': ['output_shaft'],
+        'description': 'The output shaft is located at the far right end of the model. It connects directly to the right flange plate.'
+    }
+}
+        
