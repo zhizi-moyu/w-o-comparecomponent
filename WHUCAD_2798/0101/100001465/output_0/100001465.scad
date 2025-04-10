@@ -44,4 +44,3 @@ module tapered_hollow_block() {
 // Render the model
 tapered_hollow_block();
 
-

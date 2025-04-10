@@ -1,4 +1,3 @@
-
 // Parameters
 arm_thickness = 5;
 arm_length = 30;
@@ -60,5 +59,3 @@ module assembly() {
 
 // Render the full model
 assembly();
-
-
