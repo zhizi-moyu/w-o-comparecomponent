@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 hub_d = 20;
 hub_l = 20;
@@ -64,5 +64,5 @@ for (i = [0:90:270]) {
         translate([bolt_offset, 0, hub_l + flange_t + bolt_l])
             nut();
 }
-```
+
 
