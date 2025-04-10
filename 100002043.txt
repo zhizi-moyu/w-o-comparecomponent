@@ -1,0 +1,37 @@
+
+
+            component_list = {
+    'spacer_ring': {
+        'num': '6',
+        'description': 'A thick, flat ring with a circular outer profile and a concentric circular hole in the center. The outer edge is smooth and cylindrical, while the inner hole is also cylindrical and uniform. The ring has a consistent thickness and appears machined with clean, sharp edges. It resembles a washer but is thicker, suggesting it may serve as a spacer or structural separator in an assembly.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['spacer_ring_1'],
+        'description': 'This is the topmost spacer ring in the vertical stack.'
+    },
+    'layer_2': {
+        'involved_components': ['spacer_ring_2'],
+        'description': 'This spacer ring is directly below spacer_ring_1 in the vertical stack.'
+    },
+    'layer_3': {
+        'involved_components': ['spacer_ring_3'],
+        'description': 'This spacer ring is directly below spacer_ring_2 in the vertical stack.'
+    },
+    'layer_4': {
+        'involved_components': ['spacer_ring_4'],
+        'description': 'This spacer ring is directly below spacer_ring_3 in the vertical stack.'
+    },
+    'layer_5': {
+        'involved_components': ['spacer_ring_5'],
+        'description': 'This spacer ring is directly below spacer_ring_4 in the vertical stack.'
+    },
+    'layer_6': {
+        'involved_components': ['spacer_ring_6'],
+        'description': 'This is the bottommost spacer ring in the vertical stack.'
+    }
+}
+        
