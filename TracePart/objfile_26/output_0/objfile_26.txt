@@ -1,0 +1,37 @@
+
+
+            component_list = {
+  'central_shaft': {
+    'num': '1',
+    'description': 'A long cylindrical shaft with a central bulge and stepped diameters at both ends. The shaft has two symmetrical ends, each with a groove for retaining rings, a hole for groove pins, and a key slot on the face. The central section is slightly thicker, forming a collar-like bulge.'
+  },
+  'retaining_ring': {
+    'num': '2',
+    'description': 'Thin circular rings seated in grooves near both ends of the shaft. These rings are used to axially secure components on the shaft.'
+  },
+  'groove_pin': {
+    'num': '2',
+    'description': 'Small cylindrical pins inserted into radial holes near each end of the shaft. These pins likely serve to lock the shaft rotationally or axially with other components.'
+  },
+  'key_slot': {
+    'num': '2',
+    'description': 'Rectangular slots cut into the flat end faces of the shaft, used to accommodate keys for torque transmission when mated with other rotating components.'
+  }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['retaining_ring', 'groove_pin', 'key_slot'],
+        'description': 'These components are located at one end of the central shaft. The retaining ring is seated in a groove, the groove pin is inserted radially, and the key slot is cut into the end face.'
+    },
+    'layer_2': {
+        'involved_components': ['central_shaft'],
+        'description': 'The central shaft spans the entire structure, with a central bulge and stepped diameters at both ends. It serves as the main axis for all other components.'
+    },
+    'layer_3': {
+        'involved_components': ['retaining_ring', 'groove_pin', 'key_slot'],
+        'description': 'These components are located at the opposite end of the central shaft, mirroring the configuration of layer_1.'
+    }
+}
+        
