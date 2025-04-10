@@ -1,0 +1,37 @@
+
+
+            component_list = {
+    'input_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft with a central bore and two threaded holes on the side for bolt insertion. One end is flat while the other interfaces with the flange.'
+    },
+    'output_shaft': {
+        'num': '1',
+        'description': 'A solid cylindrical shaft similar to the input shaft, with a central bore and two threaded holes on the side. It interfaces with the opposite flange.'
+    },
+    'spacer_ring': {
+        'num': '2',
+        'description': 'A very flat, thin ring with a large central hole. It is sandwiched between two flange plates to provide spacing and flexibility.'
+    },
+    'flange_plate': {
+        'num': '4',
+        'description': 'A flat, thick ring-like plate with bolt holes around the perimeter. These plates are mounted on the ends of the shafts and hold the spacer rings in place.'
+    },
+    'bolt': {
+        'num': '8',
+        'description': 'A slender cylindrical fastener with a hexagonal socket head, used to connect the flange plates through the spacer rings.'
+    },
+    'nut': {
+        'num': '16',
+        'description': 'Small hexagonal cylinders that thread onto the bolts to secure the flange plates together. Each bolt is fastened with two nuts.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['input_shaft'],
+        'description': 'This component is located in this layer alone and is a solid cylindrical shaft with a central bore and two threaded holes on the side.'
+    }
+}
+        
