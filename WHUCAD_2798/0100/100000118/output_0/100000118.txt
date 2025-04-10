@@ -1,0 +1,17 @@
+
+
+            component_list = {
+    'pyramidal_cavity_block': {
+        'num': '1',
+        'description': 'A solid square block with a hollow pyramidal cavity on the top face. The outer shape is a rectangular cuboid with flat vertical sides and a flat bottom. The top surface is open, revealing a recessed square-based pyramid that tapers inward and downward. The cavity is symmetrical and centered within the top face. The walls of the cavity slope uniformly from the square opening to a point near the center of the block’s depth. The outer block has sharp edges and uniform thickness on all sides.'
+    }
+}
+            modify component list:
+            
+            graph_dict = {
+    'layer_1': {
+        'involved_components': ['pyramidal_cavity_block'],
+        'description': 'This component is located in this layer alone, occupying the full vertical extent of the model. The top face features a recessed pyramidal cavity, while the rest of the block is solid.'
+    }
+}
+        
