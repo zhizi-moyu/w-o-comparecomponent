@@ -1,4 +1,4 @@
-```scad
+
 // Parameters
 outer_length = 60;
 outer_width = 30;
@@ -43,5 +43,5 @@ module tapered_hollow_block() {
 
 // Render the model
 tapered_hollow_block();
-```
+
 
